@@ -4,6 +4,14 @@ on:
   push:
     branches:
       - main
+
+# jobs:
+#   criar-arquivo:
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Criar arquivo de teste push
+#         run: echo "Este é um arquivo de teste criado pelo workflow de push." > teste-push.md
+
 jobs:
   build:
     runs-on: ubuntu-latest
