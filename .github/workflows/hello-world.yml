@@ -18,8 +18,9 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Create test-push.md file
+        # echo "Este é um arquivo de teste criado no push" > teste-push.md
       run: |
-        echo "Este é um arquivo de teste criado no push" > teste-push.md
+        echo "Nova linha adicionada no push" >> teste-push.md
     - name: Commit and push
       run: |
         git config --global user.name 'GitHub Actions'
