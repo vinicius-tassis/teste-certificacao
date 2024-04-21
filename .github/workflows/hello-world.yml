@@ -1,10 +1,13 @@
-name: hello-world
-on: push
-  branches:
+name: Criar Arquivo de Teste Push
+
+on:
+  push:
+    branches:
       - main
+
 jobs:
-  my-job:
+  criar-arquivo:
     runs-on: ubuntu-latest
     steps:
-      - name: Criar arquivo de teste
-        run: echo "Hello World!" > teste-push.md
+      - name: Criar arquivo de teste push
+        run: echo "Este é um arquivo de teste criado pelo workflow de push." > teste-push.md
