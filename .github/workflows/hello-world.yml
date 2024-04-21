@@ -20,7 +20,7 @@ jobs:
     - name: Create test-push.md file
         # echo "Este é um arquivo de teste criado no push" > teste-push.md
       run: |
-        echo "\\nNova linha adicionada no push\\n" >> teste-push.md
+        echo "\nNova linha adicionada no push\n" >> teste-push.md
     - name: Commit and push
       run: |
         git config --global user.name 'GitHub Actions'
